@@ -1,0 +1,27 @@
+README  -*- org -*-
+
+* Problem Statement
+  Modify the translator in Section 2.9 to produce as output code for
+  the abstract stack machine of Section 2.8.
+
+* Abstract Stack Machine code
+
+** Stack Manipulation
+   | Instruction | Description                                                                  |
+   |-------------+------------------------------------------------------------------------------|
+   | push /v/    | push /v/ onto the stack                                                      |
+   | rvalue /l/  | push contents of data location /l/                                           |
+   | lvalue /l/  | push address of data location /l/                                            |
+   | pop         | throw away value of top of the stack                                         |
+   | :=          | the /r/-value on top is placed in the /l/-value below it and both are popped |
+   | copy        | push a copy of the top value on the stack                                    |
+
+** Control Flow
+   | Instruction | Description                                             |
+   |-------------+---------------------------------------------------------|
+   | label /l/   | target of jumps to /l/; has no other affect             |
+   | goto /l/    | next instruction is taken from statement with label /l/ |
+   | gofalse /l/ | pop the top value; jump if it is zero                   |
+   | gotrue /l/  | pop the top value; jump if it is nonzero                |
+   | halt        | stop execution                                          |
+
