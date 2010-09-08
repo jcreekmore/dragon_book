@@ -1,0 +1,9 @@
+README  -*- org -*-
+
+* Problem Statement
+  Modify the error recovery module of the translator in Section 2.9 to
+  skip to the next input expression on encountering an error.
+
+** Note
+   Instead of modifying the translator in Section 2.9, I am modifying
+   the one I modified for P2.2.
