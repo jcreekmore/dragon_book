@@ -19,7 +19,7 @@ struct entry {     /* form of symbol table entry */
 	int token;
 };
 
-struct entry *symtable;
+extern struct entry symtable[];
 
 
 extern int lexan(void);

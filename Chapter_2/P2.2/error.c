@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include "global.h"
 
 void error(char *m)   /* generates all error messages */
