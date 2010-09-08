@@ -16,10 +16,10 @@ void emit(int t, int tval)      /* generates output */
 		printf("MOD\n");
 		break;
 	case NUM:
-		printf("%d\n", tval);
+		printf("push %d\n", tval);
 		break;
 	case ID:
-		printf("%s\n", symtable[tval].lexptr);
+		printf("rvalue %s\n", symtable[tval].lexptr);
 		break;
 	default:
 		printf("token %d, tokenval %d\n", t, tval);
