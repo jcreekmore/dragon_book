@@ -1,0 +1,14 @@
+README  -*- org -*-
+
+* Problem Statement
+  Extend the translator in Section 2.9 to handle all Pascal expressions.
+
+** Note
+   Instead of modifying the translator in Section 2.9, I am modifying
+   the one I modified for P2.3.
+
+* Pascal Precedence Levels ([[http://en.wikipedia.org/wiki/Comparison_of_Pascal_and_C#Expressions][Pascal Expressions]])
+  1. Logical negation: not
+  2. Multiplicative: * / div mod and
+  3. Additive: + - or
+  4. Relational: = <> < > <= >= in
